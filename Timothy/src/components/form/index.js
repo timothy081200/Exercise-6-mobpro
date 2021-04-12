@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
 import {View,TextInput,Button,Text,StyleSheet} from 'react-native'
 
-const Forms = ()=>{
+const FormulirForm = ()=>{
   const [name,setName] = useState();
   const [username,setUserame] = useState();
   const [email,setEmail] = useState();
   const [address,setAddress] = useState();
   const [number,setPhoneNumber] = useState();
 
-   const onSubmit = ()=>{
+   const SubmitForm = ()=>{
     const datas = {
       name:name,
       username:username,
@@ -39,12 +39,12 @@ const Forms = ()=>{
         marginVertical:10,
         marginBottom:30}}
       placeholder='input your phone number' onChangeText={e=>{setPhoneNumber(e)}}/>
-    <Button title='Register' style={style.regButton} onPress={onSubmit}/>
+    <Button title='Register' style={style.regButton} onPress={SubmitForm}/>
     </View>
   )
 }
 
-export default Forms
+export default FormulirForms
 
 const style = StyleSheet.create({
   container:{

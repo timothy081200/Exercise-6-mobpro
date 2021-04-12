@@ -3,7 +3,7 @@ import {View,ScrollView,Text} from 'react-native'
 import Card from '../../src/components/list'
 import Axios from 'axios'
 
-const UserList = () => {
+const ListUser = () => {
   const[users,setUsers] = useState([]);
 
   useEffect(()=>{
@@ -30,4 +30,4 @@ const UserList = () => {
   )
 }
 
-export default UserList
+export default ListUser
